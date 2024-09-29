@@ -1,0 +1,135 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6e6; /* Light pink background */
+            color: #4a2c2a; /* Chocolate brown for text */
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        /* Header */
+        header {
+            background-color: #6D4C41;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #a67c52; /* Sand color */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Feedback Form Section */
+        .feedback {
+            background-color: #F5F5F5;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .feedback h2 {
+            margin-bottom: 30px;
+            color: #a67c52;
+        }
+
+        .feedback form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        .feedback label {
+            display: block;
+            margin-top: 15px;
+            color: #4a2c2a;
+        }
+
+        .feedback input, .feedback textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .feedback button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #D32F2F;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .feedback button:hover {
+            background-color: #8b5e34;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feedback Form</h1>
+        <nav>
+        <a href="home.html">Home</a>
+        <a href="our story.html">Story</a>
+        <a href="shop.html">Shop</a>
+        <a href="recepies.html">Ingredients and flavors</a>
+        <a href="finalrecipe.html">Recepies</a>
+        <a href="sustain.html">Sustainability</a>
+        <a href="faqs.html">FAQS</a>
+        <a href="mini1.html">Gifts</a>
+        <a href="mini2.html">Events and Workshop</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <section class="feedback">
+        <h2>We Value Your Feedback</h2>
+        <form id="feedbackForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+</body>
+</html>

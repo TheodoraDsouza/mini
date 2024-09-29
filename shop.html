@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+    <title>Product Catalog - Choco Bites</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f4ec; /* Soft sand-like color */
+            color: #4a2c2a; /* Chocolate brown for text */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #a67c52; /* Sand color */
+            margin-bottom: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #d1bfa7; /* Light border for cards */
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            padding: 15px;
+        }
+
+        .product-name {
+            font-size: 1.5em;
+            color: #4a2c2a;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 1em;
+            color: #6b4f40; /* Slightly lighter brown */
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-size: 1.2em;
+            color: #d2691e; /* Cocoa color */
+            margin-bottom: 20px;
+        }
+
+        .buy-button {
+            background-color: #a67c52; /* Sand color */ 
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #8b5e34;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Our Products</h1>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="photo1.jpeg" alt="Chocolate Bar" class="product-image">
+                <div class="product-details">
+                    <div class="product-name">Chocolate Bar</div>
+                    <div class="product-description">A smooth chocolate bar made from the finest cocoa beans.</div>
+                    <div class="product-price">Rs.60</div>
+                    <a href="buy.html" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="photo2.jpeg" alt="Dark Chocolate bar" class="product-image">
+                <div class="product-details">
+                    <div class="product-name">Dark Chocolate Bar</div>
+                    <div class="product-description">Rich and indulgent dark chocolate with a silky smooth center.</div>
+                    <div class="product-price">Rs.80</div>
+                    <a href="buy.html" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="photo4.jpeg" alt="White Chocolate bites" class="product-image">
+                <div class="product-details">
+                    <div class="product-name">White Chocolate Bites</div>
+                    <div class="product-description">Rich and Crunchy white chocolate which melts once have a bite.</div>
+                    <div class="product-price">Rs.80</div>
+                    <a href="buy.html" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="photo5.jpeg" alt="Dark Chocolate bar" class="product-image">
+                <div class="product-details">
+                    <div class="product-name">Dark Chocolate Bites</div>
+                    <div class="product-description">Crunchy and sweet Dark chocolate bites with almond pieces.</div>
+                    <div class="product-price">Rs.200</div>
+                    <a href="buy.html" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
