@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Chocolate Gift Sets</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6e6; /* Light pink background */
+            color: #4a2c2a; /* Chocolate brown for text */
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        /* Header */
+        header {
+            background-color: #6D4C41;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('background2.jpg');
+            height: 600px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 20px;
+            background-color: #D32F2F;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #8b5e34;
+        }
+
+        /* Gift Categories Section */
+        .categories {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .categories h2 {
+            margin-bottom: 30px;
+            color: #a67c52;
+        }
+
+        .categories .category-item {
+            display: inline-block;
+            width: 30%;
+            margin: 1.5%;
+            padding: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .categories .category-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .categories img {
+            width: 100%;
+            border-radius: 10px;
+            transition: opacity 0.3s ease;
+        }
+
+        .categories .category-item:hover img {
+            opacity: 0.85;
+        }
+
+        .categories button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #a67c52;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .categories button:hover {
+            background-color: #8b5e34;
+        }
+
+        /* Customization Section */
+        .customization {
+            background-color: #F5F5F5;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .customization h2 {
+            margin-bottom: 30px;
+            color: #a67c52;
+        }
+
+        .customization form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        .customization label {
+            display: block;
+            margin-top: 15px;
+            color: #4a2c2a;
+        }
+
+        .customization select, .customization input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .customization button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #D32F2F;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .customization button:hover {
+            background-color: #8b5e34;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #a67c52; /* Sand color */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #d2691e; /* Rich cocoa color */
+            font-weight: bold;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta a {
+            background-color: #a67c52;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #8b5e34;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Personalized Chocolate Gift Sets</h1>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#categories">Gift Sets</a>
+        <a href="#customization">Customize</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<div class="hero" id="hero">
+    <div>
+        <h1>Make Every Occasion Sweeter</h1>
+        <button onclick="scrollToCustomize()">Start Customizing</button>
+    </div>
+</div>
+
+<!-- Gift Categories -->
+<section class="categories container" id="categories">
+    <h2>Curated Chocolate Gift Sets for Every Occasion</h2>
+    <div class="category-item">
+        <img src="giftset.jpg" alt="Birthday Gift Set">
+        <button>Birthdays</button>
+    </div>
+    <div class="category-item">
+        <img src="giftset2.jpg" alt="Holiday Gift Set">
+        <button>Holidays</button>
+    </div>
+    <div class="category-item">
+        <img src="giftset3.jpg" alt="Corporate Gift Set">
+        <button>Corporate</button>
+    </div>
+    <div class="category-item">
+        <img src="giftset4.jpg" alt="Anniversary Gift Set">
+        <button>Anniversaries</button>
+    </div>
+    <div class="category-item">
+        <img src="giftset5.jpg" alt="Valentine's Day Gift Set">
+        <button>Valentine's Day</button>
+    </div>
+    <div class="category-item">
+        <img src="giftset6.jpg" alt="Thank You Gift Set">
+        <button>Thank You</button>
+    </div>
+</section>
+
+<!-- Customization Section -->
+<section class="customization container" id="customization">
+    <h2>Create Your Perfect Gift</h2>
+    <form id="customForm">
+        <label for="chocolateType">Choose Chocolate Type:</label>
+        <select id="chocolateType" required>
+            <option value="milk">Milk Chocolate</option>
+            <option value="dark">Dark Chocolate</option>
+            <option value="white">White Chocolate</option>
+        </select>
+
+        <label for="boxSize">Select Box Size:</label>
+        <select id="boxSize" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+
+        <label for="message">Personalized Message (Optional):</label>
+        <input type="text" id="message" placeholder="Enter your message here">
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+</section>
+
+<script>
+    function scrollToCustomize() {
+        document.getElementById("customization").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function submitForm() {
+        const chocolateType = document.getElementById("chocolateType").value;
+        const boxSize = document.getElementById("boxSize").value;
+        const message = document.getElementById("message").value;
+        alert(`Your order for ${chocolateType} chocolate, size ${boxSize}, with message "${message}" has been placed!`);
+    }
+</script>
+<center>
+<div class="next-page-link" style="text-align:center; margin-top: 20px;"></div>
+    <a href="mini2.html" style="font-size: 20px; text-decoration: none; color: #D32F2F;">Next Page</a>
+</div>
+</center>
+
+</body>
+</html>
